@@ -1,11 +1,9 @@
 import React from 'react'
 import actionCreators from '../redux/actions'
-import Tab from 'components/weui/tab'
 import connect from 'react-redux/lib/components/connect'
 
 import { Body, Foot } from 'app/layout'
 
-import 'weui'
 import 'themes/global'
 import { Button } from 'antd-mobile';
 
@@ -33,10 +31,11 @@ class Comp extends React.Component {
   }
 
   render() {
-    return <Tab>
+    return <section>
       <Body>{this.props.children}</Body>
+      <Button loading>sss</Button>
       <Foot ref="foot" />
-    </Tab>
+    </section>
   }
 }
 
