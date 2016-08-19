@@ -55,7 +55,7 @@ const config = {
   resolve: {
     root: path.resolve(),
     modulesDirectories: ['src', 'node_modules'],
-    extensions: ['', '.js', '.jsx', '.html', '.css', '.scss'],
+    extensions: ['', '.web.js', '.js', '.jsx', '.html', '.css', '.scss'],
     alias: {
       'react': 'preact-compat',
       'react-dom': 'preact-compat'
