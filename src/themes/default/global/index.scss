@@ -1,0 +1,19 @@
+@import "reset";
+@import "classes";
+@import "weui";
+
+body {
+  background-color: white;
+  font-size: 14px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+#app,
+#app > div {
+  height: 100%;
+  overflow: hidden;
+}
