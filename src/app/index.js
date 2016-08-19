@@ -7,6 +7,7 @@ import { Body, Foot } from 'app/layout'
 
 import 'weui'
 import 'themes/global'
+import { Button } from 'antd-mobile';
 
 @connect(
   state => ({
