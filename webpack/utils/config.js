@@ -57,8 +57,8 @@ const config = {
     modulesDirectories: ['src', 'node_modules'],
     extensions: ['', '.web.js', '.js', '.jsx', '.html', '.css', '.scss'],
     alias: {
-      'react': 'preact-compat',
-      'react-dom': 'preact-compat'
+      'react': 'react-lite',
+      'react-dom': 'react-lite'
     }
   }
 }
