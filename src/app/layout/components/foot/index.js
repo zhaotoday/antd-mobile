@@ -1,8 +1,6 @@
 import React from 'react'
 import styles from './theme/styles'
-import { Tabs, Icon, WhiteSpace } from 'antd-mobile'
-
-const TabPane = Tabs.TabPane
+import { TabBar } from 'antd-mobile'
 
 export default class extends React.Component {
   static contextTypes = {
@@ -17,11 +15,39 @@ export default class extends React.Component {
 
   render() {
     return <div className={styles['tab-bar']}>
-      <Tabs type="tabbar" defaultActiveKey="1" onChange={this._handleChange}>
-        <TabPane tab={<span><Icon type="home" />首页</span>} key="1"></TabPane>
-        <TabPane tab={<span><Icon type="team" />好友</span>} key="2"></TabPane>
-        <TabPane tab={<span><Icon type="setting" />设置</span>} key="3"></TabPane>
-      </Tabs>
+      <TabBar
+        unselectedTintColor="#949494"
+        tintColor="#33A3F4"
+        barTintColor="white">
+        <TabBar.Item
+          title="生活"
+          key="生活"
+          icon={{ uri: 'https://zos.alipayobjects.com/rmsportal/XLdKiKAwDRXQNhC.png' }}
+          selectedIcon={{ uri: 'https://zos.alipayobjects.com/rmsportal/iKfBQdGdTMubhXy.png' }}
+          selected={this.state.selectedTab === 'blueTab'}
+          onPress={() => {
+            this.setState({
+              selectedTab: 'blueTab',
+            });
+          }}>
+          1
+        </TabBar.Item>
+        <TabBar.Item
+          icon={{ uri: 'https://zos.alipayobjects.com/rmsportal/UNQhIatjpNZHjVf.png' }}
+          selectedIcon={{ uri: 'https://zos.alipayobjects.com/rmsportal/HLkBvJOKnmOfBPO.png' }}
+          title="口碑"
+          key="口碑"
+          badge={this.state.notifCount > 0 ? this.state.notifCount : undefined}
+          selected={this.state.selectedTab === 'redTab'}
+          onPress={() => {
+            this.setState({
+              selectedTab: 'redTab',
+              notifCount: this.state.notifCount + 1,
+            });
+          }}>
+          2
+        </TabBar.Item>
+      </TabBar>
     </div>
   }
 
