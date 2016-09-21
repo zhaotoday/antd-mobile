@@ -35,6 +35,14 @@
     }
   </script>
   <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js"></script>
+  <script src="https://as.alipayobjects.com/g/component/fastclick/1.0.6/fastclick.js"></script>
+  <script>
+    if ('addEventListener' in document) {
+      window.addEventListener('load', function() {
+        FastClick.attach(document.body);
+      }, false);
+    }
+  </script>
 </head>
 <body>
 <div id="app"></div>
