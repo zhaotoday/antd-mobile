@@ -3,9 +3,9 @@ import actionCreators from '../redux/actions'
 import connect from 'react-redux/lib/components/connect'
 
 import { Body, Foot } from 'app/layout'
+import { Button, NavBar, Icon } from 'antd-mobile'
 
 import 'themes/global'
-import { Button } from 'antd-mobile';
 
 @connect(
   state => ({
@@ -33,7 +33,16 @@ class Comp extends React.Component {
   render() {
     return <section>
       <Body>{this.props.children}</Body>
-      <Button loading>sss</Button>
+      <div style={{ padding: 8 }}>
+        <NavBar leftContent="返回"
+          rightContent={[<Icon key="0" type="user" />, <Icon key="1" type="search" />, <Icon key="2" type="plus" />]}
+        >NavBar</NavBar>
+        <div style={{ height: 8 }} />
+        <NavBar leftContent="返回" mode="light"
+          rightContent={[<Icon key="0" type="user" />, <Icon key="1" type="search" />, <Icon key="2" type="plus" />]}
+        >NavBar</NavBar>
+      </div>
+      <Button loading>登陆</Button>
       <Foot ref="foot" />
     </section>
   }
