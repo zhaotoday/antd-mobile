@@ -1,6 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const consts = require('./consts')
 const path = require('path')
+const pxtorem = require('postcss-pxtorem')
 
 const config = {
   module: {
@@ -26,23 +27,14 @@ const config = {
     ]
   },
   sassLoader: {
-    includePaths: ['src']
+    includePaths: ['src', 'node_modules']
   },
   postcss: [
-    require('postcss-font-magician')(),
-    require('cssnano')({
-      filterPlugins: false,
-      sourcemap: true,
-      autoprefixer: {
-        add: true,
-        remove: true,
-        browsers: ['last 2 versions']
-      },
-      safe: true,
-      discardComments: {
-        removeAll: true
-      }
-    })
+    pxtorem({
+      rootValue: 100,
+      propWhiteList: [],
+    }),
+    require('postcss-font-magician')()
   ],
   plugins: [
     new HtmlWebpackPlugin({

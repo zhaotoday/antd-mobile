@@ -27,7 +27,7 @@ module.exports = {
       {
         test: /\.css$/,
         include: /node_modules/,
-        loader: ExtractTextPlugin.extract('style', 'css')
+        loader: ExtractTextPlugin.extract('style', 'css!postcss')
       },
       ...config.module.loaders
     ]

@@ -37,7 +37,7 @@ module.exports = {
       {
         test: /\.css$/,
         include: /node_modules/,
-        loader: 'style!css'
+        loader: 'style!css!postcss'
       },
       ...config.module.loaders
     ]
