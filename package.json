@@ -73,12 +73,13 @@
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
-    "antd-mobile": "^0.8.5",
+    "antd-mobile": "^0.9.0",
     "axios": "^0.13.1",
     "fbjs": "^0.8.3",
     "history": "^3.0.0",
     "preact": "^5.5.0",
     "preact-compat": "^2.0.0",
+    "rc-form": "^1.0.0",
     "react": "^15.2.1",
     "react-dom": "^15.2.1",
     "react-lite": "^0.15.14",
