@@ -6,7 +6,7 @@ module.exports = class extends React.Component {
     return <div>
       <header>
         <NavBar iconName="home" rightContent={[<Icon key="1" type="search" />]}>
-          首页
+          我来帮忙
         </NavBar>
       </header>
       <section>

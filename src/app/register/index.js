@@ -1,5 +1,4 @@
 import React from 'react'
-import styles from './theme/styles'
 
 import { NavBar, Popover, Icon, List, InputItem, Button, WingBlank, WhiteSpace, Toast } from 'antd-mobile'
 import { createForm } from 'rc-form';
@@ -20,7 +19,7 @@ module.exports = createForm()(class extends React.Component {
   render() {
     const { getFieldProps } = this.props.form;
 
-    return <section className={styles.register}>
+    return <div>
       <NavBar iconName={false} rightContent={
       <Popover
         visible={this.state.visible}
@@ -78,7 +77,7 @@ module.exports = createForm()(class extends React.Component {
         <Button type="ghost" size="small" inline onClick={this._handleSubmit}>我要登陆</Button>
         <Button type="ghost" size="small" inline style={{ float: 'right' }} onClick={this._handleSubmit}>忘记密码</Button>
       </WingBlank>
-    </section>
+    </div>
   }
 
   onSelect = (opt) => {
