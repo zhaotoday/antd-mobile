@@ -1,7 +1,8 @@
 import React from 'react'
 
 import { NavBar, Popover, Icon, List, InputItem, Button, WingBlank, WhiteSpace, Toast } from 'antd-mobile'
-import { createForm } from 'rc-form';
+import { createForm } from 'rc-form'
+import helpers from 'utils/helpers'
 
 module.exports = createForm()(class extends React.Component {
   static contextTypes = {
@@ -46,7 +47,7 @@ module.exports = createForm()(class extends React.Component {
       }>
         注册
       </NavBar>
-      <WhiteSpace size="lg" />
+      <WhiteSpace />
 
       <List>
         <InputItem type="phone" placeholder="输入手机号" extra={
@@ -70,11 +71,11 @@ module.exports = createForm()(class extends React.Component {
           确认密码
         </InputItem>
       </List>
-      <WhiteSpace size="lg" />
-      <WingBlank>
-        <Button type="primary" onClick={this._handleSubmit}>确定</Button>
-        <WhiteSpace size="lg" />
-        <Button type="ghost" size="small" inline onClick={this._handleSubmit}>我要登陆</Button>
+      <WhiteSpace />
+      <WingBlank size="md">
+        <Button type="primary" onClick={helpers.go.bind(this, '/')}>确定</Button>
+        <WhiteSpace />
+        <Button type="ghost" size="small" inline style={{ float: 'left' }} onClick={helpers.go.bind(this, '/login')}>我要登陆</Button>
         <Button type="ghost" size="small" inline style={{ float: 'right' }} onClick={this._handleSubmit}>忘记密码</Button>
       </WingBlank>
     </div>

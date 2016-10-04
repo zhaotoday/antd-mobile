@@ -10,8 +10,8 @@ module.exports = class extends React.Component {
         </NavBar>
       </header>
       <section>
-        <WingBlank size="lg">
-          <WhiteSpace size="lg" />
+        <WingBlank size="md">
+          <WhiteSpace />
           <Card>
             <Card.Header
               title="到十堂打饭"
@@ -22,7 +22,7 @@ module.exports = class extends React.Component {
             </Card.Body>
             <Card.Footer content="这是卡尾" extra={<div>这是尾部介绍</div>} />
           </Card>
-          <WhiteSpace size="lg" />
+          <WhiteSpace />
           <Card>
             <Card.Header
               title="到十堂打饭"
@@ -33,7 +33,7 @@ module.exports = class extends React.Component {
             </Card.Body>
             <Card.Footer content="南区四号楼 235 宿舍" extra={<div>这是尾部介绍</div>} />
           </Card>
-          <WhiteSpace size="lg" />
+          <WhiteSpace />
           <Card>
             <Card.Header
               title="到十堂打饭"
@@ -44,7 +44,7 @@ module.exports = class extends React.Component {
             </Card.Body>
             <Card.Footer content="这是卡尾" extra={<div>这是尾部介绍</div>} />
           </Card>
-          <WhiteSpace size="lg" />
+          <WhiteSpace />
           <Card>
             <Card.Header
               title="到十堂打饭"
@@ -55,7 +55,7 @@ module.exports = class extends React.Component {
             </Card.Body>
             <Card.Footer content="这是卡尾" extra={<div>这是尾部介绍</div>} />
           </Card>
-          <WhiteSpace size="lg" />
+          <WhiteSpace />
           <Card>
             <Card.Header
               title="到十堂打饭"
@@ -66,7 +66,7 @@ module.exports = class extends React.Component {
             </Card.Body>
             <Card.Footer content="这是卡尾" extra={<div>这是尾部介绍</div>} />
           </Card>
-          <WhiteSpace size="lg" />
+          <WhiteSpace />
           <Card>
             <Card.Header
               title="到十堂打饭"
@@ -77,7 +77,7 @@ module.exports = class extends React.Component {
             </Card.Body>
             <Card.Footer content="这是卡尾" extra={<div>这是尾部介绍</div>} />
           </Card>
-          <WhiteSpace size="lg" />
+          <WhiteSpace />
           <Card>
             <Card.Header
               title="到十堂打饭"
@@ -88,7 +88,7 @@ module.exports = class extends React.Component {
             </Card.Body>
             <Card.Footer content="这是卡尾" extra={<div>这是尾部介绍</div>} />
           </Card>
-          <WhiteSpace size="lg" />
+          <WhiteSpace />
           <Card>
             <Card.Header
               title="到十堂打饭"
@@ -99,7 +99,7 @@ module.exports = class extends React.Component {
             </Card.Body>
             <Card.Footer content="这是卡尾" extra={<div>这是尾部介绍</div>} />
           </Card>
-          <WhiteSpace size="lg" />
+          <WhiteSpace />
           <Card>
             <Card.Header
               title="到十堂打饭"
@@ -110,7 +110,7 @@ module.exports = class extends React.Component {
             </Card.Body>
             <Card.Footer content="这是卡尾" extra={<div>这是尾部介绍</div>} />
           </Card>
-          <WhiteSpace size="lg" />
+          <WhiteSpace />
         </WingBlank>
       </section>
     </div>
