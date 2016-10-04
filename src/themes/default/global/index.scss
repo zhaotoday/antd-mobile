@@ -1,8 +1,10 @@
 @import "reset";
 @import "classes";
+@import "antd-mobile";
 
 #app,
-#app > div {
+#app > div,
+#app > div > section {
   height: 100%;
   overflow: hidden;
 }

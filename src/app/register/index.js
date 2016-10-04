@@ -58,7 +58,10 @@ module.exports = createForm()(class extends React.Component {
           })}>
           手机号
         </InputItem>
-        <InputItem type="number" placeholder="输入手机收到的验证码" maxLength={6}>
+        <InputItem type="number" placeholder="输入手机收到的验证码" maxLength={6}
+          {...getFieldProps('number', {
+            initialValue: '',
+          })}>
           验证码
         </InputItem>
         <InputItem type="password" placeholder="输入密码">
@@ -71,6 +74,9 @@ module.exports = createForm()(class extends React.Component {
       <WhiteSpace size="lg" />
       <WingBlank>
         <Button type="primary" onClick={this._handleSubmit}>确定</Button>
+        <WhiteSpace size="lg" />
+        <Button type="ghost" size="small" inline onClick={this._handleSubmit}>我要登陆</Button>
+        <Button type="ghost" size="small" inline style={{ float: 'right' }} onClick={this._handleSubmit}>忘记密码</Button>
       </WingBlank>
     </section>
   }
@@ -89,6 +95,6 @@ module.exports = createForm()(class extends React.Component {
   }
 
   _handleSubmit = () => {
-    Toast.fail('请输入手机号', 3)
+    Toast.fail('请输入手机号', 2)
   }
 })

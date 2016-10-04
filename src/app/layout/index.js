@@ -1,7 +1,7 @@
 import Body from './components/body'
-import Foot from './components/foot'
+import Footer from './components/footer'
 
 export {
   Body,
-  Foot
+  Footer
 }

@@ -8,3 +8,12 @@ body {
   font-family: PingFang SC, Helvetica Neue, Hiragino Sans GB, Helvetica, Microsoft YaHei, Arial;
   line-height: 1.5;
 }
+
+section {
+  position: absolute;
+  top: 120px;
+  bottom: 120px;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
